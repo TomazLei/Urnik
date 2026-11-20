@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Urnik Impol</title>
+    <script type="module" crossorigin src="./assets/index-CKCSkg4Z.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CiN5rEtH.css">
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Urnik" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="theme-color" content="#eef3f8" />
+    <script>
+      if ('serviceWorker' in navigator) addEventListener('load', function () { navigator.serviceWorker.register('./sw.js') })
+      if (navigator.storage && navigator.storage.persist) navigator.storage.persist()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="18 18 72 72" width="72" height="72">
+  <!-- Urnik Impol app icon: calendar page on brushed aluminium.
+       108x108 = Android adaptive icon canvas; launchers show the centre 72x72, the page stays
+       inside the 66-unit safe circle. #metal = adaptive background layer, #page = foreground. -->
+  <defs>
+    <linearGradient id="alu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef1f4"/>
+      <stop offset="0.45" stop-color="#c9d0d7"/>
+      <stop offset="0.55" stop-color="#bcc5ce"/>
+      <stop offset="1" stop-color="#dfe4e9"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0.22" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.40" stop-color="#ffffff" stop-opacity="0.45"/>
+      <stop offset="0.50" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="brush" width="108" height="7" patternUnits="userSpaceOnUse">
+      <rect y="0.6" width="108" height="0.35" fill="#ffffff" opacity="0.4"/>
+      <rect y="1.9" width="108" height="0.3" fill="#7f8b97" opacity="0.12"/>
+      <rect y="3.1" width="108" height="0.35" fill="#ffffff" opacity="0.25"/>
+      <rect y="4.4" width="108" height="0.3" fill="#7f8b97" opacity="0.15"/>
+      <rect y="5.7" width="108" height="0.3" fill="#ffffff" opacity="0.3"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4b5560"/>
+      <stop offset="0.5" stop-color="#a3adb7"/>
+      <stop offset="1" stop-color="#4b5560"/>
+    </linearGradient>
+  </defs>
+  <g id="metal">
+    <rect width="108" height="108" fill="url(#alu)"/>
+    <rect width="108" height="108" fill="url(#brush)"/>
+    <rect width="108" height="108" fill="url(#sheen)"/>
+  </g>
+  <g id="page">
+    <rect x="32" y="36" width="46" height="44" rx="6" fill="#0b1f3a" opacity="0.35" filter="url(#shadow)"/>
+    <rect x="31" y="33" width="46" height="44" rx="6" fill="#ffffff"/>
+    <path d="M31 39 a6 6 0 0 1 6 -6 h34 a6 6 0 0 1 6 6 v6 h-46 z" fill="#002052"/>
+    <rect x="31" y="45" width="46" height="1.4" fill="#00b8d6"/>
+    <rect x="36" y="51.5" width="10" height="9" rx="2" fill="#f59e0b"/>
+    <rect x="49" y="51.5" width="10" height="9" rx="2" fill="#3b82f6"/>
+    <rect x="62" y="51.5" width="10" height="9" rx="2" fill="#8b5cf6"/>
+    <rect x="36" y="63" width="10" height="9" rx="2" fill="#cbd5e1"/>
+    <rect x="49" y="63" width="10" height="9" rx="2" fill="#f59e0b"/>
+    <rect x="62" y="63" width="10" height="9" rx="2" fill="#dc2626"/>
+    <rect x="41" y="29" width="3.4" height="10" rx="1.7" fill="url(#ring)"/>
+    <rect x="63.6" y="29" width="3.4" height="10" rx="1.7" fill="url(#ring)"/>
+  </g>
+</svg>
